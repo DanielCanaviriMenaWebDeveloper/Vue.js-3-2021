@@ -17,3 +17,12 @@ vslot-named     Name slot
 =============================================================
 
 vue             Estructura base de un componente de vue 
+
+
+==============================================================
+https://cli.vuejs.org/
+
+-   Instalación con Yarn 
+    $   yarn global add @vue/cli
+-   Verificar Instalación
+    $   vue --version
