@@ -26,3 +26,8 @@ https://cli.vuejs.org/
     $   yarn global add @vue/cli
 -   Verificar Instalación
     $   vue --version
+-   Crear un proyecto
+    $ vue create name_project
+-   Ejecutar servidor 
+    $ yarn serve
+
