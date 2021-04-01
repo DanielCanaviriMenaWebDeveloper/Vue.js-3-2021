@@ -1,7 +1,7 @@
 <template>
 	<div>
-		<h1>Vue JS</h1>
-		<p>Hola Mundo</p>
+		<h1>Vue JS - 2021</h1>
+		<p>Hola Daniel</p>
 		<Car />
 	</div>
 </template>
