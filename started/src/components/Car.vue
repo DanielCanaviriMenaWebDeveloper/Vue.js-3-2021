@@ -20,13 +20,22 @@
             </li>
         </ul> -->
         <ul>
-            <template v-for="(potencia, index) in potencias" :key="index">
-                <li v-if="potencia<300">{{potencia}}</li>
+            <template v-for="(potencia, index) in potencias" :key="index"><!-- No es recomendable definir una key en un elemento inexistente -->
+                <li v-if="potencia < 300">{{ potencia }}</li>
             </template>
         </ul>
 
         <ul v-for="(tecnologia, index) in tecnologias" :key="index">
             <li>{{ tecnologia }}</li>
+        </ul>
+        
+        <p>Potencias menores a 280:</p>
+        <ul v-for="(potencia, index) in potencias" :key="index"> 
+            <li v-if="potencia < 280">Urbana : {{ potencia }}</li>
+            <li v-else-if="potencia === 280">Hibrido : {{ potencia }}</li>
+            <li v-else>Carrera : {{ potencia }}</li>
+            
+            <li v-if="potencia < 700">Super : {{ potencia }}</li>
         </ul>
         <Test />
     </div>
@@ -60,7 +69,7 @@ export default {
             title: 'Titulo del mensaje',
             text: 'Texto del mensaje'
         };
-        const potencias = [60, 80, 120, 160, 200, 280, 300, 390, 540, 500];
+        const potencias = [60, 80, 350, 120, 450, 160, 200, 280, 300, 390, 540, 500];
         const tecnologias = ['JS', 'CSS', 'HTML', 'JQuery', 'React', 'PHP', 'Vue.js', 'Angular'];
         return {
             brand, model, colors, price, power, mensaje, potencias, tecnologias
