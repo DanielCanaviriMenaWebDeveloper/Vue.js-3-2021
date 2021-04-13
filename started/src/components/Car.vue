@@ -35,7 +35,9 @@
             <li v-else-if="potencia === 280">Hibrido : {{ potencia }}</li>
             <li v-else>Carrera : {{ potencia }}</li>
             
-            <li v-if="potencia < 700">Super : {{ potencia }}</li>
+            <li v-if="potencia < 700">2do Recorrido : {{ potencia }}</li>
+
+            <li v-if="potencia < 150">3er Recorrido : {{ potencia }}</li>
         </ul>
         <Test />
     </div>
